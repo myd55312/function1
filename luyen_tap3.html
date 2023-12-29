@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    function number() {-->
+<!--        let num1 = parseInt(prompt("Nhập vào tham số thứ 1"));-->
+<!--        let num2 = parseInt(prompt("Nhập vao tham số thứ 2"));-->
+<!--        if (num1 > num2) {-->
+<!--            alert("Giá trị số 1 lớn hơn giá trị thứ 2");-->
+<!--        } else {-->
+<!--            let tong = num1 + num2;-->
+<!--            return tong;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<script>
+    function kiemTraVaTinhTong(thamSo1, thamSo2) {
+        if (thamSo1 > thamSo2) {
+            alert("Giá trị của tham số thứ nhất lớn hơn tham số thứ hai.");
+        } else {
+            let tong = thamSo1 + thamSo2;
+            return tong;
+        }
+    }
+    let thamSo1 = parseFloat(prompt("Nhập giá trị của tham số thứ nhất:"));
+    let thamSo2 = parseFloat(prompt("Nhập giá trị của tham số thứ hai:"));
+    let ketQua = kiemTraVaTinhTong(thamSo1, thamSo2);
+    if (ketQua !== undefined) {
+        alert("Tổng của hai tham số là: " + ketQua);
+    }
+
+</script>
+</body>
+</html>
